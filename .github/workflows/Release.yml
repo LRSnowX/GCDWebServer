@@ -1,4 +1,4 @@
-name: Build and Publish GCDWebServer Framework
+name: Release
 
 on:
   push:
