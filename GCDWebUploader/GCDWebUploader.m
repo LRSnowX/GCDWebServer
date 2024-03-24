@@ -218,9 +218,9 @@ NS_ASSUME_NONNULL_END
     int retries = 0;
     do {
       if (extension.length) {
-        path = [directory stringByAppendingPathComponent:(NSString*)[[base stringByAppendingFormat:@" (%i)", ++retries] stringByAppendingPathExtension:extension]];
+        path = [directory stringByAppendingPathComponent:(NSString*)[[base stringByAppendingFormat:@"(%i)", ++retries] stringByAppendingPathExtension:extension]];
       } else {
-        path = [directory stringByAppendingPathComponent:[base stringByAppendingFormat:@" (%i)", ++retries]];
+        path = [directory stringByAppendingPathComponent:[base stringByAppendingFormat:@"(%i)", ++retries]];
       }
     } while ([[NSFileManager defaultManager] fileExistsAtPath:path]);
   }
