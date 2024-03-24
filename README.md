@@ -47,58 +47,14 @@ Swift Package Manager
 ---------------------
 
 1. From the Xcode menu click File > Swift Packages > Add Package Dependency.
-2. In the dialog that appears, enter the repository URL: https://github.com/swisspol/GCDWebServer.
+2. In the dialog that appears, enter the repository URL: https://github.com/LRSnowX/GCDWebServer.
 3. In Version, select Up to Next Major and take the default option.
 4. Choose 'GCDWebServers' in the Package Product column.
-
-If you are developing a SPM package, you must add the following dependency to your Package.swift:
-```swift
-dependencies: [
-  .package(url: "https://github.com/swisspol/GCDWebServer", from: "3.5.5"),
-]
-```
-
-Finally you declare GCDWebServer as a dependency on your target:
-```swift
-.target(
-  name: "YOUR_TARGET_NAME",
-  dependencies: [
-    .product(name: "GCDWebServers", package: "GCDWebServer"),
-  ]),
-```
 
 Manually
 ---------
 
-Download or check out the [latest release](https://github.com/swisspol/GCDWebServer/releases) of GCDWebServer then add the entire "GCDWebServer" subfolder to your Xcode project. If you intend to use one of the extensions like GCDWebDAVServer or GCDWebUploader, add these subfolders as well. Finally link to `libz` (via Target > Build Phases > Link Binary With Libraries) and add `$(SDKROOT)/usr/include/libxml2` to your header search paths (via Target > Build Settings > HEADER_SEARCH_PATHS).
-
-CocoaPods
----------
-
-You can install GCDWebServer using [CocoaPods](http://cocoapods.org/). Simply add this line to your Podfile:
-```
-pod "GCDWebServer", "~> 3.0"
-```
-If you want to use GCDWebUploader, use this line instead:
-```
-pod "GCDWebServer/WebUploader", "~> 3.0"
-```
-Or this line for GCDWebDAVServer:
-```
-pod "GCDWebServer/WebDAV", "~> 3.0"
-```
-
-And finally run `$ pod install`.
-
-Carthage
----------
-
-You can also use [Carthage](https://github.com/Carthage/Carthage) by adding this line to your Cartfile (3.2.5 is the first release with Carthage support):
-```
-github "swisspol/GCDWebServer" ~> 3.2.5
-```
-
-Then run `$ carthage update` and add the generated frameworks to your Xcode projects (see [Carthage instructions](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application)).
+Download or check out the [latest release](https://github.com/LRSnowX/GCDWebServer) of GCDWebServer then add the entire "GCDWebServer" subfolder to your Xcode project. If you intend to use one of the extensions like GCDWebDAVServer or GCDWebUploader, add these subfolders as well. Finally link to `libz` (via Target > Build Phases > Link Binary With Libraries) and add `$(SDKROOT)/usr/include/libxml2` to your header search paths (via Target > Build Settings > HEADER_SEARCH_PATHS).
 
 Help & Support
 ==============
