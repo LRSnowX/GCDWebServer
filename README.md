@@ -424,7 +424,7 @@ NSString* websitePath = [[NSBundle mainBundle] pathForResource:@"Website" ofType
 
 // Add an override handler for all requests to "*.html" URLs to do the special HTML templatization
 [self addHandlerForMethod:@"GET"
-                pathRegex:@"/.*\.html"
+                pathRegex:@"/.*\\.html"
              requestClass:[GCDWebServerRequest class]
              processBlock:^GCDWebServerResponse *(GCDWebServerRequest* request) {
     
