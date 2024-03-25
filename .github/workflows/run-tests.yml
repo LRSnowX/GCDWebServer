@@ -16,7 +16,7 @@ jobs:
       - name: Setup Xcode
         uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: '11.3'
+          xcode-version: '13.1.0'
 
       - name: Run tests
         run: |
