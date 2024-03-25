@@ -1327,6 +1327,7 @@
 		E274F877187E77D8009E0582 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				INFOPLIST_FILE = /GCDWebServer/Frameworks/Info.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1334,6 +1335,7 @@
 		E274F878187E77D8009E0582 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				INFOPLIST_FILE = /GCDWebServer/Frameworks/Info.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
