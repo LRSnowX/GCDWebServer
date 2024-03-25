@@ -1,6 +1,7 @@
 GCDWebServer
 ========
 
+[![Run Tests](https://github.com/LRSnowX/GCDWebServer/actions/workflows/run-tests.yml/badge.svg)](https://github.com/LRSnowX/GCDWebServer/actions/workflows/run-tests.yml)
 GCDWebServer is a modern and lightweight GCD based HTTP 1.1 server designed to be embedded in iOS, macOS & tvOS apps. It was written from scratch with the following goals in mind:
 * Elegant and easy to use architecture with only 4 core classes: server, connection, request and response (see "Understanding GCDWebServer's Architecture" below)
 * Well designed API with fully documented headers for easy integration and customization
