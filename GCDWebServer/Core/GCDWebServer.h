@@ -425,7 +425,7 @@ extern NSString* const GCDWebServerAuthenticationMethod_DigestAccess;
  *
  *  Returns NO if the server failed to start.
  */
-- (BOOL)start;
+- (BOOL)startWithError:(NSError**)error;
 
 /**
  *  Starts the server on a given port and with a specific Bonjour name.
@@ -434,7 +434,7 @@ extern NSString* const GCDWebServerAuthenticationMethod_DigestAccess;
  *
  *  Returns NO if the server failed to start.
  */
-- (BOOL)startWithPort:(NSUInteger)port bonjourName:(nullable NSString*)name;
+- (BOOL)startWithPort:(NSUInteger)port bonjourName:(nullable NSString*)name error:(NSError**)error;
 
 #if !TARGET_OS_IPHONE
 
