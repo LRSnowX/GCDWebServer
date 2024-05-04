@@ -844,11 +844,11 @@ static inline NSString* _EncodeBase64(NSString* string) {
   return nil;
 }
 
-- (BOOL)start {
-  return [self startWithPort:kDefaultPort bonjourName:@""];
+- (BOOL)startWithError:(NSError **)error {
+    return [self startWithPort:kDefaultPort bonjourName:@"" error:error];
 }
 
-- (BOOL)startWithPort:(NSUInteger)port bonjourName:(NSString*)name {
+- (BOOL)startWithPort:(NSUInteger)port bonjourName:(NSString*)name error:(NSError **)error {
   NSMutableDictionary* options = [NSMutableDictionary dictionary];
   [options setObject:[NSNumber numberWithInteger:port] forKey:GCDWebServerOption_Port];
   [options setValue:name forKey:GCDWebServerOption_BonjourName];
